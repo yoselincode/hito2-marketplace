@@ -9,7 +9,6 @@ export default function ProfilePurchasesTab({ userId }) {
   const [totalCount, setTotalCount] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Utilidad: CLP/ES-CL (si quieres decimales mantengo 2; cambia minimumFractionDigits si prefieres sin decimales)
   const currency = useCallback(
     (n) =>
       new Intl.NumberFormat("es-CL", {
