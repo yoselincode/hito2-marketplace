@@ -93,7 +93,7 @@ export default function ProfilePurchasesTab({ userId }) {
                   <div className="text-right">
                     <div className="text-sm text-slate-500">Subtotal</div>
                     <div className="font-semibold">
-                      ${Number(sale.totalIva || 0).toFixed(2)}
+                      ${Number(sale.totalAmount || 0).toFixed(2)}
                     </div>
                   </div>
                 </div>
@@ -103,16 +103,16 @@ export default function ProfilePurchasesTab({ userId }) {
               <div className="text-slate-600">
                 IVA total:{" "}
                 <span className="font-semibold">
-                  {(
-                        Number(saleItem.price) * Number(saleItem.quantity) +
-                        Number(saleItem.iva || 0)
-                      ).toFixed(2)}
+                  ${Number(sale.totalIva || 0).toFixed(2)}
                 </span>
               </div>
               <div className="text-lg">
                 Total:{" "}
                 <span className="font-bold">
-                  ${Number(sale.totalAmount || 0).toFixed(2)}
+                   {(
+                        Number(saleItem.price) * Number(saleItem.quantity) +
+                        Number(saleItem.iva || 0)
+                      ).toFixed(2)}
                 </span>
               </div>
             </div>
