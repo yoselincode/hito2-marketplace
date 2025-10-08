@@ -153,7 +153,7 @@ export default function ProfilePurchasesTab({ userId }) {
                   <span className="font-semibold">{currency(saleIva)}</span>
                 </div>
                 <div className="text-lg">
-                  Total:{" "}aaaaa
+                  Total:{" "}
                   <span className="font-bold">
                     {currency(saleGrandTotal)}
                   </span>
