@@ -114,12 +114,6 @@ export default function ProfilePage() {
             )}
           </div>
         </div>
-        <Link
-          to="/profile/edit"
-          className="rounded-xl border px-4 py-2 text-sm hover:bg-slate-50"
-        >
-          Editar perfil
-        </Link>
       </div>
 
       <div className="mt-6 flex gap-2">
